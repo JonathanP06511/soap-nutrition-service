@@ -1,0 +1,8 @@
+version: "3.9"
+services:
+  soap-nutrition-service:
+   build: ../soap-nutrition-service
+   ports:
+     - 3011
+
+  

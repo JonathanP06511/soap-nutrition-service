@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="utf-8"?>
+<definitions name="NutritiousFoodService"
+             targetNamespace="http://www.example.org/nutritiousfood/"
+             xmlns:tns="http://www.example.org/nutritiousfood/"
+             xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+             xmlns:soap="http://schemas.xmlsoap.org/soap/envelope/"
+             xmlns:wsdl="http://schemas.xmlsoap.org/wsdl/">
+
+    <message name="getFoodsRequest"/>
+    <message name="getFoodsResponse">
+        <part name="foods" type="xsd:string"/>
+    </message>
+
+    <portType name="NutritiousFoodPortType">
+        <operation name="getFoods">
+            <input message="tns:getFoodsRequest"/>
+            <output message="tns:getFoodsResponse"/>
+        </operation>
+    </portType>
+
+    <binding name="NutritiousFoodBinding" type="tns:NutritiousFoodPortType">
+        <soap:binding style="rpc" transport="http://schemas.xmlsoap.org/soap/http"/>
+        <operation name="getFoods">
+            <soap:operation soapAction="http://www.example.org/nutritiousfood/getFoods"/>
+            <input>
+                <soap:body use="encoded" namespace="http://www.example.org/nutritiousfood/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </input>
+            <output>
+                <soap:body use="encoded" namespace="http://www.example.org/nutritiousfood/" encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"/>
+            </output>
+        </operation>
+    </binding>
+
+    <service name="NutritiousFoodService">
+        <port name="NutritiousFoodPort" binding="tns:NutritiousFoodBinding">
+            <soap:address location="http://localhost:3000/wsdl"/>
+        </port>
+    </service>
+</definitions>

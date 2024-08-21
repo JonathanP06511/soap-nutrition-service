@@ -1,0 +1,13 @@
+{
+  "name": "soap-nutrition-service",
+  "version": "1.0.0",
+  "description": "SOAP service for providing information about nutritious foods.",
+  "main": "src/index.js",
+  "scripts": {
+    "start": "node src/index.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2",
+    "soap": "^0.43.0"
+  }
+}
