@@ -14,7 +14,7 @@ This project is a SOAP-based Nutritious Food Service built with Node.js and Expr
 
 1. Clone this repository to your local machine:
     ```bash
-    git clone <repository URL>
+    git clone https://github.com/JonathanP06511/soap-nutrition-service.git
     ```
 
 2. Install the dependencies:

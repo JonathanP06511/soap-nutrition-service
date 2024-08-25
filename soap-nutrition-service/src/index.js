@@ -14,8 +14,14 @@ const serviceDefinition = {
 
                 const foods = [
                     { name: 'Apple', calories: 52, protein: 0.3, fat: 0.2, carbohydrates: 14 },
-                    { name: 'Banana', calories: 89, protein: 1.1, fat: 0.3, carbohydrates: 23 },
-                    { name: 'Carrot', calories: 41, protein: 0.9, fat: 0.2, carbohydrates: 10 }
+                    { name: 'Oats', calories: 389, protein: 16.9, fat: 6.9, carbohydrates: 66.3 },
+                    { name: 'Spinach', calories: 23, protein: 2.9, fat: 0.4, carbohydrates: 3.6 },
+                    { name: 'Orange', calories: 47, protein: 0.9, fat: 0.1, carbohydrates: 12 },
+                    { name: 'Yogurt', calories: 59, protein: 10, fat: 0.4, carbohydrates: 3.6 },
+                    { name: 'Egg', calories: 155, protein: 13, fat: 11, carbohydrates: 1.1 },
+                    { name: 'Tomato', calories: 18, protein: 0.9, fat: 0.2, carbohydrates: 3.9 },
+                    { name: 'Rice', calories: 130, protein: 2.7, fat: 0.3, carbohydrates: 28 },
+                    { name: 'Peanut Butter', calories: 588, protein: 25, fat: 50, carbohydrates: 20 }
                 ];
                 callback({ foods });
             }
